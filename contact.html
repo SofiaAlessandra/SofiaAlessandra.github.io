@@ -2,50 +2,49 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Contact Us - Big Red Camden</title>
+  <title>Contact - Big Red Camden</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link href="//fonts.googleapis.com/css2?family=Sancreek&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
 </head>
-  (function(){
-    emailjs.init("YOUR_PUBLIC_KEY"); // Replace with your public key
-  })();
-</script>
 <body>
-    <header>
-        <div class="logo">
-          <a href="index.html">
-            <img src="logo.png" alt="Big Red Logo" />
-          </a>
-        </div>
-        <nav>
-          <a href="index.html">HOME</a>
-          <a href="merch.html">MERCH</a>
-          <a href="contact.html">CONTACT</a>
-        </nav>
-      </header>
-      <div class="page-wrapper">
-        <!-- Your page content here -->
+  <header>
+    <div class="logo">
+      <a href="index.html">
+        <img src="logo.png" alt="Big Red Logo" />
+      </a>
+    </div>
+    <nav>
+      <a href="index.html">HOME</a>
+      <a href="merch.html">MERCH</a>
+      <a href="contact.html">CONTACT</a>
+      <a href="contact.html#map">FIND US</a>
+
+    </nav>
+  </header>
+
+  <div class="page-wrapper">
+
+    <div class="contact-details">
+      <h1>GET IN TOUCH</h1>
+      <p><strong>PHONE:</strong> <a href="tel:+441234567890">+44 1234 567 890</a></p>
+      <p><strong>EMAIL:</strong> <a href="mailto:info@bigredcamden.com">info@bigredcamden.com</a></p>
+    </div>
+
+    <div class="neon-divider"></div>
     
-  <h1>GET IN TOUCH</h1>
-  <div class="contact">
-    <form id="contact-form">
-      <label for="name">NAME:</label>
-      <input type="text" id="name" name="name" required />
-    
-      <label for="email">EMAIL:</label>
-      <input type="email" id="email" name="email" required />
-    
-      <label for="message">MESSAGE:</label>
-      <textarea id="message" name="message" rows="5" required></textarea>
-    
-      <button type="submit">SEND</button>
-    </form>    
+    <div class="map-container" id="map">
+      <h2>FIND US</h2>
+      <iframe
+        src=https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2481.377976884692!2d-0.1509388234948521!3d51.542967771821566!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761bf3f8d32647%3A0x6127effbbe8bbc0d!2sThe%20Imperial%20Palace%20of%20Big%20Red!5e0!3m2!1sen!2suk!4v1743118825697!5m2!1sen!2suk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>"
+      </iframe>
+    </div>
   </div>
-</div>
-<footer>
-  <p>&copy; 2025 BAD GIRLS HOTEL LTD. ALL RIGHTS RESERVED.</p>
-</footer>
-<script src="scripts.js"></script>
+
+  <footer>
+    <p>&copy; 2025 BAD GIRLS HOTEL LTD. ALL RIGHTS RESERVED.</p>
+  </footer>
+  <script src="scripts.js"></script>
 
 </body>
 </html>

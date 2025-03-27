@@ -45,7 +45,7 @@ p {
 ----------------------------- */
 .page-wrapper {
   flex: 1;
-  padding-top: 160px; /* Push content below fixed header */
+  padding-top: 160px;
 }
 
 /* -----------------------------
@@ -80,7 +80,7 @@ nav {
 }
 
 nav a {
-  color: #00b7ff; /* Electric blue */
+  color: #00b7ff;
   text-decoration: none;
   margin: 0 15px;
   font-weight: bold;
@@ -89,7 +89,7 @@ nav a {
 }
 
 nav a:hover {
-  color: #ff00cc; /* Neon pink */
+  color: #ff00cc;
   text-shadow: 0 0 5px #ff00cc, 0 0 10px #ff00cc;
 }
 
@@ -120,50 +120,105 @@ footer {
 }
 
 /* -----------------------------
-   Contact Page
+   Contact Details & Map
 ----------------------------- */
-.contact,
-.contact-page {
-  max-width: 600px;
-  margin: 0 auto 50px;
+.contact-details {
   background-color: rgba(0, 0, 0, 0.7);
   padding: 30px;
+  max-width: 600px;
+  margin: 0 auto 30px;
   border-radius: 10px;
   color: #fff;
+  text-align: center;
+  font-size: 1.2rem;
 }
 
-form label {
-  display: block;
-  margin: 15px 0 5px;
+.contact-details a {
+  color: #00b7ff;
+  text-decoration: none;
   font-weight: bold;
 }
 
-form input,
-form textarea {
-  width: 100%;
+.contact-details a:hover {
+  color: #ff00cc;
+  text-shadow: 0 0 5px #ff00cc;
+}
+
+.map-container {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.map-container h2 {
+  margin-bottom: 15px;
+  color: #ff00cc;
+  font-size: 1.8rem;
+}
+
+/* -----------------------------
+   Opening Hours & Status
+----------------------------- */
+.opening-hours {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 30px;
+  max-width: 600px;
+  margin: 0 auto 30px;
+  border-radius: 10px;
+  color: #fff;
+  text-align: center;
+}
+
+.opening-hours h2 {
+  color: #ff00cc;
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+}
+
+.opening-hours ul {
+  list-style: none;
+  padding: 0;
+}
+
+.opening-hours li {
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+}
+
+.open-status {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#status-indicator {
+  font-size: 1.5rem;
+  font-weight: bold;
   padding: 10px;
-  border: none;
-  border-radius: 5px;
-  background-color: #fff;
-  color: #000;
+  border-radius: 8px;
+  display: inline-block;
 }
 
-form button {
-  margin-top: 20px;
+#status-indicator.open {
+  color: #00ff8c;
+  text-shadow: 0 0 5px #00ff8c, 0 0 10px #00ff8c;
+}
+
+#status-indicator.closed {
+  color: #ff003c;
+  text-shadow: 0 0 5px #ff003c, 0 0 10px #ff003c;
+}
+
+/* -----------------------------
+   Neon Divider
+----------------------------- */
+.neon-divider {
+  width: 100%;
+  max-width: 300px;
+  height: 4px;
   background: #ff00cc;
-  color: white;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  font-weight: bold;
-  font-family: 'Sancreek', cursive;
-  font-size: large;
-  box-shadow: 0 0 8px #ff00cc;
-}
-
-form button:hover {
-  background: #00b7ff;
+  margin: 40px auto;
+  box-shadow: 0 0 10px #ff00cc, 0 0 20px #ff00cc;
+  border-radius: 2px;
 }
 
 /* -----------------------------
@@ -224,7 +279,7 @@ form button:hover {
 }
 
 /* -----------------------------
-   Responsive Layout (Mobile)
+   Responsive Layout
 ----------------------------- */
 @media (max-width: 768px) {
   header {
@@ -243,7 +298,7 @@ form button:hover {
   }
 
   .page-wrapper {
-    padding-top: 140px; /* slightly smaller on mobile */
+    padding-top: 140px;
   }
 
   .grid {
@@ -254,9 +309,39 @@ form button:hover {
     padding: 15px;
   }
 
-  .contact,
-  .contact-page {
-    margin-top: 120px;
+  .contact-details,
+  .opening-hours {
     padding: 20px;
   }
 }
+
+.countdown {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+#countdown-timer {
+  color: #fff;
+  font-size: 1.2rem;
+}
+
+/* Neon Pulse */
+.neon-pulse {
+  animation: pulse 1.5s infinite alternate;
+  border: 2px solid #00ff8c;
+  padding: 10px 20px;
+  margin-top: 20px;
+  box-shadow: 0 0 8px #00ff8c, 0 0 16px #00ff8c;
+  border-radius: 8px;
+  display: inline-block;
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 8px #00ff8c, 0 0 16px #00ff8c;
+  }
+  100% {
+    box-shadow: 0 0 16px #00ff8c, 0 0 24px #00ff8c;
+  }
+}
+
