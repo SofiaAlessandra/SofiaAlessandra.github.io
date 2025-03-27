@@ -1,6 +1,5 @@
 @import url('//fonts.googleapis.com/css2?family=Sancreek&display=swap');
 
-
 /* -----------------------------
    Reset & Base Styles
 ----------------------------- */
@@ -46,7 +45,7 @@ p {
 ----------------------------- */
 .page-wrapper {
   flex: 1;
-  padding-top: 160px; /* Space below fixed header */
+  padding-top: 160px; /* Push content below fixed header */
 }
 
 /* -----------------------------
@@ -85,15 +84,14 @@ nav a {
   text-decoration: none;
   margin: 0 15px;
   font-weight: bold;
-  font-size: large;
+  font-size: 1.1rem;
   transition: color 0.3s ease;
 }
 
 nav a:hover {
-  color: #ff00cc;
+  color: #ff00cc; /* Neon pink */
   text-shadow: 0 0 5px #ff00cc, 0 0 10px #ff00cc;
 }
-
 
 /* -----------------------------
    Footer
@@ -226,7 +224,7 @@ form button:hover {
 }
 
 /* -----------------------------
-   Responsive Layout
+   Responsive Layout (Mobile)
 ----------------------------- */
 @media (max-width: 768px) {
   header {
@@ -237,6 +235,15 @@ form button:hover {
   .logo img {
     height: 80px;
     margin-bottom: 10px;
+  }
+
+  nav a {
+    font-size: 1rem;
+    margin: 10px;
+  }
+
+  .page-wrapper {
+    padding-top: 140px; /* slightly smaller on mobile */
   }
 
   .grid {
