@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Sancreek&display=swap');
+@import url('//fonts.googleapis.com/css2?family=Sancreek&display=swap');
+
 
 /* -----------------------------
    Reset & Base Styles
@@ -86,10 +87,6 @@ nav a {
   font-weight: bold;
   font-size: large;
   transition: color 0.3s ease;
-}
-
-nav a:hover {
-  color: #ff00cc; /* Neon pink on hover */
 }
 
 nav a:hover {
