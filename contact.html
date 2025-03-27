@@ -6,6 +6,10 @@
   <link href="//fonts.googleapis.com/css2?family=Sancreek&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
 </head>
+  (function(){
+    emailjs.init("YOUR_PUBLIC_KEY"); // Replace with your public key
+  })();
+</script>
 <body>
     <header>
         <div class="logo">
@@ -24,10 +28,7 @@
     
   <h1>GET IN TOUCH</h1>
   <div class="contact">
-    <form action="https://formsubmit.io/send/bigredcamden@outlook.com" method="POST">
-      <input name="_formsubmit_id" type="text" style="display:none">
-      <input type="hidden" name="_redirect" value="https://sofiaalessandra.github.io/thankyou.html">
-    
+    <form id="contact-form">
       <label for="name">NAME:</label>
       <input type="text" id="name" name="name" required />
     
@@ -38,13 +39,13 @@
       <textarea id="message" name="message" rows="5" required></textarea>
     
       <button type="submit">SEND</button>
-    </form>
-    
+    </form>    
   </div>
 </div>
 <footer>
   <p>&copy; 2025 BAD GIRLS HOTEL LTD. ALL RIGHTS RESERVED.</p>
 </footer>
-  
+<script src="scripts.js"></script>
+
 </body>
 </html>
