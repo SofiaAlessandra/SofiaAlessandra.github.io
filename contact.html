@@ -24,18 +24,22 @@
     
   <h1>GET IN TOUCH</h1>
   <div class="contact">
-    <form action="mailto:bigredcamden@outlook.com" method="post" enctype="text/plain">
+    <form action="https://formsubmit.io/send/bigredcamden@outlook.com" method="POST">
+      <input name="_formsubmit_id" type="text" style="display:none">
+      <input type="hidden" name="_redirect" value="https://sofiaalessandra.github.io/thankyou.html">
+    
       <label for="name">NAME:</label>
       <input type="text" id="name" name="name" required />
-  
+    
       <label for="email">EMAIL:</label>
       <input type="email" id="email" name="email" required />
-  
+    
       <label for="message">MESSAGE:</label>
       <textarea id="message" name="message" rows="5" required></textarea>
-  
+    
       <button type="submit">SEND</button>
     </form>
+    
   </div>
 </div>
 <footer>
