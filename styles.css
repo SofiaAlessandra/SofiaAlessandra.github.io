@@ -88,9 +88,10 @@
   }
   
   .logo img {
-    height: 120px;
+    height: 100px;
     width: auto;
   }
+
   .contact-page {
     max-width: 600px;
     margin: 160px auto 50px; /* pushes main down below header + logo */
@@ -230,4 +231,18 @@
   .contact form button:hover {
     background: #00b7ff;
   }
-  
+  @media (max-width: 768px) {
+  .hero {
+    height: auto;
+    padding-top: 140px;
+    padding-bottom: 40px;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .hero h2 {
+    font-size: 1.2rem;
+  }
+}
