@@ -32,9 +32,12 @@ h1, h2, p {
 
 h1 {
   margin-bottom: 20px;
-  font-size: 2.5rem;
+  font-size: 4rem;
 }
-
+h2 {
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
 p {
   line-height: 1.6;
   font-size: 1rem;
@@ -84,7 +87,7 @@ nav a {
   text-decoration: none;
   margin: 0 15px;
   font-weight: bold;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   transition: color 0.3s ease;
 }
 
@@ -97,26 +100,10 @@ nav a:hover {
    Footer
 ----------------------------- */
 footer {
-  background-color: rgba(0, 0, 0, 0.85);
   color: #ccc;
   text-align: center;
   padding: 20px 10px;
   margin-top: 50px;
-}
-
-.footer-nav {
-  margin-bottom: 10px;
-}
-
-.footer-nav a {
-  color: #ff00cc;
-  margin: 0 10px;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-.footer-nav a:hover {
-  text-decoration: underline;
 }
 
 /* -----------------------------
@@ -130,7 +117,7 @@ footer {
   border-radius: 10px;
   color: #fff;
   text-align: center;
-  font-size: 1.2rem;
+  font-size: 2.0rem;
 }
 
 .contact-details a {
@@ -138,7 +125,12 @@ footer {
   text-decoration: none;
   font-weight: bold;
 }
-
+.contact-details p {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.5rem;  
+  font-weight: lighter;
+}
 .contact-details a:hover {
   color: #ff00cc;
   text-shadow: 0 0 5px #ff00cc;
@@ -152,8 +144,8 @@ footer {
 
 .map-container h2 {
   margin-bottom: 15px;
-  color: #ff00cc;
-  font-size: 1.8rem;
+  color: #fff;
+  font-size: 2.5rem;
 }
 
 /* -----------------------------
@@ -170,8 +162,8 @@ footer {
 }
 
 .opening-hours h2 {
-  color: #ff00cc;
-  font-size: 1.8rem;
+  color: #fff;
+  font-size: 2.5rem;
   margin-bottom: 15px;
 }
 
@@ -182,7 +174,7 @@ footer {
 
 .opening-hours li {
   margin-bottom: 10px;
-  font-size: 1.1rem;
+  font-size: 1.5rem;
 }
 
 .open-status {
@@ -191,8 +183,7 @@ footer {
 }
 
 #status-indicator {
-  font-size: 1.5rem;
-  font-weight: bold;
+  font-size: 1.6rem;
   padding: 10px;
   border-radius: 8px;
   display: inline-block;
@@ -327,7 +318,7 @@ footer {
 
 /* Neon Pulse */
 .neon-pulse {
-  animation: pulse 1.5s infinite alternate;
+  animation: pulse 3.5s infinite alternate;
   border: 2px solid #00ff8c;
   padding: 10px 20px;
   margin-top: 20px;
